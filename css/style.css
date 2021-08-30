@@ -495,6 +495,17 @@ header.header .chevron-right {
   color: rgba(0, 0, 0, 0.8);
   background-color: white;
 }
+/* Small */
+@media (max-width: 768px) {
+    .video {
+        position: static;
+      }
+    .video div {
+        position: static;
+            top: 0;
+            transform: translate( 0);
+        }
+}
 /* End  Awesome Video  */
 /* Start About US */
 .about {
@@ -848,8 +859,8 @@ header.header .chevron-right {
   width: 80%;
   box-sizing: border-box;
   border: white 1px solid;
-  border-right: none;
   outline: none;
+  color: white;
 }
 .pricing .email .container input[type="submit"] {
   background: var(--main-color);
@@ -863,7 +874,19 @@ header.header .chevron-right {
   color: white;
   margin: 0;
 }
-
+@media (max-width: 768px) {
+    .pricing .email .container form {
+        flex-direction: column;
+        gap: 20px;
+      }
+    .pricing .email .container input[type="email"] {
+        width: 100%;
+    }
+    .pricing .email .container form input{
+        display: block;
+        margin: auto;
+    }
+}
 /* Medium */
 @media (min-width: 992px) {
   .pricing .email .container {
@@ -923,6 +946,7 @@ header.header .chevron-right {
   font-weight: normal;
   color: black;
 }
+
 /* Small */
 @media (min-width: 768px) {
   .contact-content .container {
